@@ -20,7 +20,7 @@ class PermissionXlsxExportHandler {
 
         let ppsName = name.substring(0, name.indexOf('.'));
 
-        const sheet = this.workbook.addSheet(ppsName);
+        const sheet = this.workbook.addSheet(ppsName.substr(0, 30));
 
         /* WE will arrange the data in two logical column section
             First it logical column will display following attributes
